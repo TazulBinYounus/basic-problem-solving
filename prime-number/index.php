@@ -3,18 +3,21 @@
 $time_start = microtime(true);
 // #################################################################
 
-$num = 545001;
-
-$sum = 0;
-for ($i = 0; $i <= strlen($num); $i++) {
-    $rem = $num % 10; // remider of divition
-    $sum = $sum + $rem;
-    $num = $num / 10;
+$count = 0;
+$num = 2;
+while ($count < 15) {
+    $div_count = 0;
+    for ($i = 1; $i <= $num; $i++) {
+        if (($num % $i) == 0) {
+            $div_count++;
+        }
+    }
+    if ($div_count < 3) {
+        echo $num . " , ";
+        $count = $count + 1;
+    }
+    $num = $num + 1;
 }
-
-echo "Sum of digits 545001 is $sum";
-
-
 
 // ###########################################################################
 echo "<hr>";

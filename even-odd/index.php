@@ -3,16 +3,12 @@
 $time_start = microtime(true);
 // #################################################################
 
-$num = 545001;
-
-$sum = 0;
-for ($i = 0; $i <= strlen($num); $i++) {
-    $rem = $num % 10; // remider of divition
-    $sum = $sum + $rem;
-    $num = $num / 10;
+$number = 1233456;
+if ($number % 2 == 0) {
+    echo "$number is Even Number";
+} else {
+    echo "$number is Odd Number";
 }
-
-echo "Sum of digits 545001 is $sum";
 
 
 
