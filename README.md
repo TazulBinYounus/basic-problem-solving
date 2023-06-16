@@ -1,2 +1,2 @@
-# php-preparation
+# basic-problem-solving
 # logic development 
